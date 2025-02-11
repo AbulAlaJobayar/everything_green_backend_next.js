@@ -163,7 +163,7 @@ src/
 ## Contact
 For any questions or feedback, please reach out to:
 
-Your Name: Abul Ala Jobayar
+Name: Abul Ala Jobayar
 
 Email: abulalajobayar@gmail.cpm
 
