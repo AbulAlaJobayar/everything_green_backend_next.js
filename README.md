@@ -39,65 +39,63 @@ This is a backend application built with **Next.js** and **MongoDB** to fulfill 
 
    Install Dependencies:
 
-bash
-Copy
-npm install
-Set Up Environment Variables:
+
+## Install Dependencies:
+
+`npm install`
+
+## Set Up Environment Variables:
 Create a .env file in the root directory and add the following variables:
 
-env
-Copy
-MONGODB_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret_key
-Run the Development Server:
+- MONGODB_URI=your_mongodb_connection_string
+- JWT_SECRET=your_jwt_secret_key`
+## Run the Development Server:
 
-bash
-Copy
-npm run dev
-Access the Application:
+`npm run dev`
+## Access the Application:
 
-The API will be available at http://localhost:3000/api.
+- The API will be available at http://localhost:3000/api.
 
-Use tools like Postman or Thunder Client to test the endpoints.
+- Use tools like Postman or Thunder Client to test the endpoints.
 
-API Documentation
-1. User Management API
-Fetch All Users
-Endpoint: GET /api/users
+## API Documentation
+### 1. User Management API
+#### Fetch All Users
+- Endpoint: GET /api/users
 
-Description: Fetches all users from the database.
+- Description: Fetches all users from the database.
 
-Response:
+- Response:
 
-json
-Copy
 [
   {
+
     "_id": "64f1b2c8e4b0f5a2f8e7e1a2",
     "name": "John Doe",
     "email": "john@example.com",
     "password": "hashed_password"
   }
 ]
-Create a New User
-Endpoint: POST /api/users
 
-Description: Creates a new user with name, email, and password.
+#### Create a New User
+- Endpoint: POST /api/users
 
-Request Body:
+- Description: Creates a new user with name, email, and password.
 
-json
-Copy
-{
-  "name": "John Doe",
-  "email": "john@example.com",
-  "password": "password123"
-}
-Response:
+- Request Body:
 
-json
-Copy
-{
+
+[   {
+
+    "name": "John Doe",
+    "email": "john@example.com",
+    "password": "password123"
+    
+    }]
+
+- Response:
+
+`[{
   "user": {
     "_id": "64f1b2c8e4b0f5a2f8e7e1a2",
     "name": "John Doe",
@@ -105,92 +103,73 @@ Copy
     "password": "hashed_password"
   },
   "token": "jwt_token"
-}
-Fetch a Single User by ID
-Endpoint: GET /api/users/:id
+}]`
 
-Description: Fetches a single user by their ID.
+#### Fetch a Single User by ID
+- Endpoint: GET /api/users/:id
 
-Response:
+- Description: Fetches a single user by their ID.
 
-json
-Copy
-{
-  "_id": "64f1b2c8e4b0f5a2f8e7e1a2",
-  "name": "John Doe",
-  "email": "john@example.com",
-  "password": "hashed_password"
-}
-2. Webhook Endpoint
-Process Webhook Request
-Endpoint: POST /api/webhook
+- Response:
 
-Description: Processes incoming webhook requests and stores the data in db.json.
 
-Request Body:
+`[{
+    "_id": "64f1b2c8e4b0f5a2f8e7e1a2",
+    "name": "John Doe",
+    "email": "john@example.com",
+    "password": "hashed_password"
+}]`
 
-json
-Copy
-{
+##  Webhook Endpoint
+- Process Webhook Request
+- Endpoint: POST /api/webhook
+
+- Description: Processes incoming webhook requests and stores the data in db.json.
+
+- Request Body:
+
+
+`{
   "eventType": "user.created",
   "data": {
     "userId": "64f1b2c8e4b0f5a2f8e7e1a2",
     "email": "john@example.com"
   }
-}
+}`
 Response:
 
-json
-Copy
-{
+
+`{
   "success": true,
   "message": "Received"
-}
-Project Structure
-Copy
+}`
+
+
+## Project Structure
+
 src/
 ├── lib/               # Utility functions and helpers
 ├── middleware/        # Custom middleware
 ├── models/            # Database models
 ├── pages/             # API routes and pages
 └── public/            # Static assets
-Running Tests
-To lint the code using ESLint, run:
 
-bash
 
-npm run lint
-Contributing
-Fork the repository.
 
-Create a new branch: git checkout -b feature/your-feature-name.
+`npm run lint`
 
-Commit your changes: git commit -m "Add some feature".
 
-Push to the branch: git push origin feature/your-feature-name.
-
-Submit a pull request.
-
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-Contact
+## Contact
 For any questions or feedback, please reach out to:
 
-Abul Ala Jobayar
+Your Name: Abul Ala Jobayar
 
-Email: abulalajobayar@gmail.com
+Email: abulalajobayar@gmail.cpm
 
-GitHub: [abulalajobayar](https://github.com/AbulAlaJobayar)
-
+GitHub: https://github.com/AbulAlaJobaya
 
 
 ---
 
-### **How to Use**
-1. Copy the above content.
-2. Create a new file named `README.md` in your GitHub repository.
-3. Paste the content into the file.
-4. Commit and push the changes.
 
 Let me know if you need further assistance! 😊
