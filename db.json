@@ -14,5 +14,13 @@
       "email": "jobayarr@gmail.com"
     },
     "timestamp": "2025-02-11T19:46:49.474Z"
+  },
+  {
+    "eventType": "user",
+    "data": {
+      "userId": "67aba1f827abc1d30128d220",
+      "email": "jobayarr@gmail.com"
+    },
+    "timestamp": "2025-02-11T20:08:38.162Z"
   }
 ]
