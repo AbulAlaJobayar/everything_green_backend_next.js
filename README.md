@@ -47,8 +47,9 @@ This is a backend application built with **Next.js** and **MongoDB** to fulfill 
 ## Set Up Environment Variables:
 Create a .env file in the root directory and add the following variables:
 
-- MONGODB_URI=your_mongodb_connection_string
-- JWT_SECRET=your_jwt_secret_key`
+- MONGODB_URI="mongodb+srv://<name>:<password>@cluster0.ph1akes.mongodb.net/every_green?retryWrites=true&w=majority"
+- JWT_SECRET="123456"
+- JWT_EXPIRE_IN="1h"
 ## Run the Development Server:
 
 `npm run dev`
@@ -100,7 +101,7 @@ Create a .env file in the root directory and add the following variables:
     "_id": "64f1b2c8e4b0f5a2f8e7e1a2",
     "name": "John Doe",
     "email": "john@example.com",
-    "password": "hashed_password"
+    
   },
   "token": "jwt_token"
 }]`
@@ -117,7 +118,7 @@ Create a .env file in the root directory and add the following variables:
     "_id": "64f1b2c8e4b0f5a2f8e7e1a2",
     "name": "John Doe",
     "email": "john@example.com",
-    "password": "hashed_password"
+    
 }]`
 
 ##  Webhook Endpoint
@@ -166,7 +167,7 @@ Your Name: Abul Ala Jobayar
 
 Email: abulalajobayar@gmail.cpm
 
-GitHub: https://github.com/AbulAlaJobaya
+GitHub: https://github.com/AbulAlaJobayar
 
 
 ---

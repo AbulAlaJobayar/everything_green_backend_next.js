@@ -1,0 +1,18 @@
+[
+  {
+    "eventType": "user.created",
+    "data": {
+      "userId": "67aba1f827abc1d30128d220",
+      "email": "jobayarr@gmail.com"
+    },
+    "timestamp": "2025-02-11T19:45:26.156Z"
+  },
+  {
+    "eventType": "ami valo asi",
+    "data": {
+      "userId": "67aba1f827abc1d30128d220",
+      "email": "jobayarr@gmail.com"
+    },
+    "timestamp": "2025-02-11T19:46:49.474Z"
+  }
+]
